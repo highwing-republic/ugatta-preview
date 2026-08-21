@@ -1,3 +1,9 @@
+# UGATTA preview
+
+このフォルダは GitHub Pages の確認用です。検索エンジンに登録されにくいよう `noindex` と `robots.txt` を設定し、CNAME は含めていません。
+
+GitHub Pages: Deploy from a branch / main / (root) で公開してください。
+
 # UGATTA Website
 
 合同会社UGATTAの公式サイトです。GitHub Pagesで公開します。
@@ -25,4 +31,4 @@ git push
 - 画像alt、遅延読み込み、モバイル対応
 
 ## Analytics
-Google tag: `GT-M3S9S5D7`
+Google tag: `G-QS9HSHCY33`
