@@ -1,40 +1,20 @@
-# SEO / AI検索対応メモ
+# SEO / AIO 実装メモ
 
-## 実装済み
+## 基本SEO
+- 各ページに固有の title / meta description / canonical を設定
+- OGP / Twitter Card を設定
+- robots.txt / sitemap.xml を維持
+- Organization / WebSite / WebPage / Service / BreadcrumbList の構造化データを維持
+- 見出し階層、内部リンク、画像 alt を整理
 
-- 全主要ページに固有の `<title>` と meta description
-- canonical URL を `https://ugatta-llc.com/` 側へ統一
-- OGP / Twitter Card と 1200×630 の `og-image.jpg`
-- Organization / WebSite / Service / BreadcrumbList の JSON-LD
-- 見出し階層（各ページの H1 は1つ）とセマンティックHTMLの整理
-- 内部リンクとパンくず
-- `robots.txt` / `sitemap.xml` の更新
-- `llms.txt` の追加（AIクローラー向けの補助情報。標準SEOの代替ではありません）
-- 画像 alt、width / height、lazy loading
-- 外部Webフォント依存を削除し、表示速度を改善
-- モバイルナビ、キーボード操作、reduced motion 対応
-- 404ページに `noindex,follow`
-- Google Tag を全ページで `GT-M3S9S5D7` に統一
-- お問い合わせ / 無料ツールのクリックイベント計測用フックを追加
+## AIOを意識した構成
+- 会社・サービス・支援事例を本文で具体的に説明
+- Q&Aは利用者が実際に知りたい内容に限定し、AI向けであることを画面上では訴求しない
+- llms.txt は補助情報として残すが、サイト上のメニューからは露出しない
+- 「伴走」「実装」「価値を届ける」など抽象語の多用を避け、実際に何をするかが分かる文章へ変更
 
-## 公開後に行うこと
-
-1. GitHub Pages で本番表示・HTTPSを確認
-2. Google Search Console で `https://ugatta-llc.com/sitemap.xml` を送信
-3. URL検査からトップ、事業内容、支援事例、無料ツールの再クロールをリクエスト
-4. 構造化データを Rich Results Test / Schema Markup Validator で確認
-5. PageSpeed Insights でモバイル表示を確認
-6. GAで `contact_click` / `tool_click` が取得できるか確認
-
-## 今後、特に効く改善
-
-- 匿名事例にも「どの業務時間がどれだけ減ったか」「OTA掲載数」「問い合わせ増加」など、公開可能な一次情報・数値を追加
-- 宿泊DX、PMS選定、インバウンドOTA、業務改善などの実務記事を継続公開
-- 会社・代表・支援方針の一次情報を充実させ、UGATTAというエンティティを明確化
-- 支援事例を増やし、各テーマからサービスページへ内部リンク
-
-## AIOについて
-
-GoogleのAI Overview / AI Mode向けに特別なタグを追加するのではなく、検索エンジンがアクセスできること、独自性のある役立つ本文、明確なページ構造、表示内容と一致する構造化データを優先しています。
-
-2026年5月にGoogleはFAQリッチリザルトを廃止したため、今回は読みやすいQ&A本文は設置しつつ、FAQPage構造化データはあえて入れていません。
+## デザイン方針
+- 丸いカード、強いアクセント色、英語ラベルの多用を抑制
+- 明朝系の見出しと余白、細い罫線を中心にした編集的なデザイン
+- 色はチャコール、生成り、落ち着いたグリーンに限定
+- 既存写真は彩度を落として統一感を出す
