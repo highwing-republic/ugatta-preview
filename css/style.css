@@ -47,8 +47,11 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
 .brand-copy{display:flex;align-items:baseline;gap:14px;line-height:1}
 .brand-copy strong{font-family:var(--latin);font-size:22px;font-weight:500;letter-spacing:.2em}
 .brand-copy small{color:#6c7470;font-size:12px;letter-spacing:.06em}
-.global-nav{display:flex;align-items:center;gap:36px}
-.global-nav ul{display:flex;align-items:center;gap:30px;list-style:none;margin:0;padding:0}
+.brand--topic .brand-copy{flex-direction:column;align-items:flex-start;gap:5px;line-height:1.2}
+.brand--topic .brand-copy strong{font-family:var(--sans);font-size:16px;font-weight:600;letter-spacing:.07em;white-space:nowrap}
+.brand--topic .brand-copy small{font-family:var(--latin);font-size:12px;font-weight:500;letter-spacing:.18em}
+.global-nav{display:flex;align-items:center;gap:24px}
+.global-nav ul{display:flex;align-items:center;gap:22px;list-style:none;margin:0;padding:0}
 .global-nav li a{position:relative;font-size:12px;font-weight:500;color:#454c48;transition:color .2s}
 .global-nav li a:hover,.global-nav li a[aria-current="page"]{color:#111}
 .global-nav li a[aria-current="page"]:after{content:"";position:absolute;left:0;right:0;bottom:-11px;height:1px;background:#313a35}
