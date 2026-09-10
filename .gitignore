@@ -13,3 +13,8 @@ Thumbs.db
 # Node / tooling (if used locally)
 node_modules/
 .cache/
+
+# Python test/build artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
